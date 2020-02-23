@@ -7,7 +7,7 @@ Setup script for pyhtgen
 # 2010-05-25 v0.02: - renamed HTML.py to pyhtgen, package instead of module
 
 import distutils.core
-import HTML
+import pyhtgen
 
 DESCRIPTION = """A Python module to easily generate HTML code (tables, lists, ...).
 See http://www.decalage.info/python/html for more information.
@@ -15,7 +15,7 @@ See http://www.decalage.info/python/html for more information.
 
 kw = {
     'name': "pyhtgen",
-    'version': HTML.__version__,
+    'version': pyhtgen.HTML.__version__,
     'description': DESCRIPTION,
     'author': "Philippe Lagadec",
     'author_email': "decalage (a) laposte.net",

@@ -1,1 +1,1 @@
-from HTML import *
+from .HTML import *
