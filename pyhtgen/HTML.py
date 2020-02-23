@@ -305,10 +305,13 @@ class Table (object):
 ##            result += '<COL%s>\n' % col
         # First insert a header row if specified:
         if self.header_row:
+            result += '<THEAD>'
             if not isinstance(self.header_row, TableRow):
                 result += str(TableRow(self.header_row, header=True))
             else:
                 result += str(self.header_row)
+            result += '</THEAD>'
+        result += '<TBODY>'
         # Then all data rows:
         for row in self.rows:
             if not isinstance(row, TableRow):
@@ -326,6 +329,7 @@ class Table (object):
             if self.col_styles and not row.col_styles:
                 row.col_styles = self.col_styles
             result += str(row)
+        result += '</TBODY>'
         result += '</TABLE>'
         return result
 
