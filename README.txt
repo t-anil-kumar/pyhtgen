@@ -15,7 +15,7 @@ INSTALLATION:
 
 - on Windows, double-click on install.bat, or type "setup.py install" in a CMD
   window.
-- on other systems, type "python setup.py install" in a shell.
+- on other systems, type "cd pyhtgen ; python setup.py install" in a shell.
 
 -------------------------------------------------------------------------------
 
